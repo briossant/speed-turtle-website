@@ -1,0 +1,23 @@
+
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: #2f4858;
+}
+
+
+section {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+.carousel-caption{
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #228b22, 1px -1px 0 #228b22, -1px 1px 0 #228b22, 1px 1px 0 #228b22;
+    border-radius: 20px;
+    background-color: rgba(55,55,55,0.5);
+}
