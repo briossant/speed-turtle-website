@@ -26,6 +26,7 @@ function lerp(a, b, n) {
 }
 
 
+
 window.addEventListener('scroll', () => {
     scrollY = window.scrollY;
     const newSection = Math.floor(scrollY / window.innerHeight)
