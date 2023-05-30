@@ -1,36 +1,47 @@
-import {Clone, Instance, Scroll, ScrollControls, useAnimations, useFBX} from '@react-three/drei'
+import {
+    Clone, Gltf,
+    Instance,
+    OrbitControls,
+    Scroll,
+    ScrollControls,
+    useAnimations,
+    useFBX,
+    useGLTF,
+    useScroll
+} from '@react-three/drei'
 import { Perf } from 'r3f-perf'
 import ScrHtml from "./ScrHtml";
-import {useEffect} from "react";
+import {useEffect, useRef} from "react";
+import * as THREE from "three";
+import {useFrame} from "@react-three/fiber";
 
 
+function City(){
+    const scroll = useScroll()
 
+    useFrame((state, delta) => {
+        const offset =  1 - scroll.offset;
+        state.camera.position.set(1,2,0)
+        state.camera.rotation.set(0, Math.cos((offset * Math.PI) ) * 3, 0)
+    })
+
+    return <></>
+}
 
 export default function Experience()
 {
 
-    const model = useFBX('./TURTTLE-THE-ONE.fbx')
-    const animations = useAnimations(model.animations, model)
-
-    console.log(animations)
-
-    useEffect(() =>
-    {
-        const action = animations.actions['Thecopy|Hello']
-        action.play()
-    }, [])
 
     return <>
 
         <directionalLight castShadow position={ [ 1, 2, 3 ] } intensity={ 1.5 } shadow-normalBias={0.04} />
         <ambientLight intensity={ 0.5 } />
-        <ScrollControls damping={0.1} pages={4}>
+        <ScrollControls damping={0.1} pages={5.3}>
             <ScrHtml />
             <Scroll>
-                <primitive object={model} scale={0.008} position-y={0.1} />
+                <City/>
             </Scroll>
         </ScrollControls>
-
-
+        <Gltf src={"/Intro2.glb"}/>
     </>
 }
