@@ -11,6 +11,21 @@ body, html,#root
     font-size: large;
 }
 
+/* Style buttons */
+.btn {
+    background-color: #ff1e4b;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: #7b1b1b;
+}
+
 img{
     border-radius: 30px;
 }

@@ -40,70 +40,9 @@ export default function ScrHtml(){
                 </p>
             </div>
             <div className="container">
-                <br />
-                    <hr /><br />
-                        <h1>Menus</h1>
-                        <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
-                            <div className="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                        className="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                        aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                        aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                                        aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                                        aria-label="Slide 5"></button>
-                            </div>
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                    <img src="./menu/SharedScreenshotMain_menu.jpg" className="d-block w-100" alt="..." />
-                                        <div className="carousel-caption d-none d-md-block">
-                                            <h1>Main menu</h1>
-                                        </div>
-                                </div>
-                                <div className="carousel-item">
-                                    <img src="./menu/SharedScreenshotMODE.jpg" className="d-block w-100" alt="..."/>
-                                        <div className="carousel-caption d-none d-md-block">
-                                            <h1>Difficulty choice</h1>
-                                        </div>
-                                </div>
-                                <div className="carousel-item">
-                                    <img src="./menu/SharedScreenshotSettings.jpg" className="d-block w-100" alt="..."/>
-                                        <div className="carousel-caption d-none d-md-block">
-                                            <h1>Settings menu</h1>
-                                        </div>
-                                </div>
-                                <div className="carousel-item">
-                                    <img src="./menu/SharedScreenshotSelection.jpg" className="d-block w-100" alt="..."/>
-                                        <div className="carousel-caption d-none d-md-block">
-                                            <h1>Level selection</h1>
-                                        </div>
-                                </div>
-                                <div className="carousel-item">
-                                    <img src="./menu/SharedScreenshotPause.jpg" className="d-block w-100" alt="..."/>
-                                        <div className="carousel-caption d-none d-md-block">
-                                            <h1>Pause menu</h1>
-                                        </div>
-                                </div>
-                            </div>
-                            <button className="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Previous</span>
-                            </button>
-                            <button className="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Next</span>
-                            </button>
-                        </div>
-            </div>
-            <div className="container">
                 <br/>
                     <hr/><br/>
-                        <h1>Levels</h1>
+                        <h1>Game Pictures</h1>
                         <div id="carouselExampleCaptions2" className="carousel slide" data-bs-ride="false">
                             <div className="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0"
@@ -119,7 +58,7 @@ export default function ScrHtml(){
                             </div>
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img src="./levels/Colisée%20piquette.jpeg" className="d-block w-100" alt="..."/>
+                                    <img src="./levels/POV S3.png" className="d-block w-100" alt="..."/>
                                         <div className="carousel-caption d-none d-md-block">
                                             <h1>The Colosseum</h1>
                                             <p>Here, the two players find themselves in the middle of a Roman coliseum
@@ -145,7 +84,7 @@ export default function ScrHtml(){
                                         </div>
                                 </div>
                                 <div className="carousel-item">
-                                    <img src="./levels/poursuite new.png" className="d-block w-100" alt="..."/>
+                                    <img src="./levels/poursuiteQuiClaque.png" className="d-block w-100" alt="..."/>
                                         <div className="carousel-caption d-none d-md-block">
                                             <h1>The Chase</h1>
                                             <p>A big rock just start rolling down the hill and the players must run away
@@ -236,6 +175,20 @@ export default function ScrHtml(){
             </div>
             <br /><br /><br />
         </div>
+        <div className="container">
+            <h1>Download</h1>
+            <p className="boo">
+                Download the file below. When the download is finished, double-click on the file and follow the installation steps.
+                To Uninstall the game, go to the file game and double click on the file "unins000.exe". Follow the instruction
+                and the game will be uninstall.
+            </p>
+            <div className="container" style={{width:"50%"}}>
+                <a className="btn" href="/Intro2.glb" download="Piquette" style={{width:"100%"}}><i className="fa fa-download"></i> Download</a>
+            </div>
+        </div>
+
+        <br /><br /><br />
+
         <div style={{backgroundColor: "#2f4858", color: "#b2b2b2", textShadow: "none", height: "1000px"}} id="contact">
             <br/><br/>
                 <div className="container d-flex flex-row">
