@@ -1,8 +1,8 @@
 import {
     Clone,
     Scroll,
-    ScrollControls, useAnimations, useFBX,
-    useScroll
+    ScrollControls, Sky, useAnimations, useFBX,
+    useScroll,Environment
 } from '@react-three/drei'
 import ScrHtml from "./ScrHtml";
 import {useFrame} from "@react-three/fiber";
@@ -37,8 +37,12 @@ export default function Experience()
     }, [])
 
     return <>
-        <directionalLight castShadow position={ [ 1, 2, 3 ] } intensity={ 1.5 } shadow-normalBias={0.04} />
-        <ambientLight intensity={ 0.5 } />
+
+        <Sky
+            sunPosition={[ 1, 0, 3 ]}
+        />
+        <directionalLight castShadow position={ [ 1, 2, 3 ] } intensity={ 1 } shadow-normalBias={0.04} />
+        <ambientLight intensity={ 0.7 } />
         <ScrollControls damping={0.1} pages={6}>
             <ScrHtml />
             <Scroll>
