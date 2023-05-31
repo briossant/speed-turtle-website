@@ -20,14 +20,14 @@ export default function ScrHtml(){
             <br /><br /><br />
             <div className="container">
                 <h1>What is Piquette?</h1>
-                <p>
+                <p className="boo">
                     "Piquette" is an adventure video game. In one of your most profound dreams, you find yourself in
                     a room in the company of Piquette, a small turtle who will be with you in each level of the
                     game. Players will have to succeed in moving from room to room if they wish to wake up, once you
                     wake up, you have won the game! Between puzzles, fights, courses, and many others, will players
                     come out unscathed?
                 </p>
-                <p>
+                <p className="boo">
                     Players will go from level to level in the eyes of the character they play. The game will be
                     accessible for one player or in a duo, having for characters: Piketty, the only character
                     accessible in solo, and Piquette, a character accessible in a duo. Several modes will be
@@ -180,13 +180,13 @@ export default function ScrHtml(){
             <br /><br /><br />
             <div className="container">
                 <h1>Who are we?</h1>
-                <p>
+                <p className="boo">
                     We are all freshmen at Epita with scientific studies during high school. We have the ambition to
                     create a complete and original game, hoping everything will be made with our own hands. This
                     will allow us to acquire the necessary technical knowledge. We are determined to carry out this
                     project which is close to our hearts. Our group is called "Flipped Turtles".
                 </p>
-                <p>
+                <p className="boo">
                     The project we present below is built on the inspirations we had during discussions within our
                     group. These inspirations are based on personal opinions, and experiences from playing some
                     similar games and others. We were inspired by some existing games to bring our project to life;
@@ -236,7 +236,7 @@ export default function ScrHtml(){
             </div>
             <br /><br /><br />
         </div>
-        <div style={{backgroundColor: "#2f4858", color: "#b2b2b2"}} id="contact">
+        <div style={{backgroundColor: "#2f4858", color: "#b2b2b2", textShadow: "none", height: "1000px"}} id="contact">
             <br/><br/>
                 <div className="container d-flex flex-row">
                     <h3 className="p-3">CONTACT:</h3>

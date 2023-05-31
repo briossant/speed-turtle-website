@@ -21,7 +21,7 @@ function City(){
 
     useFrame((state, delta) => {
         const offset =  1 - scroll.offset;
-        state.camera.position.set(1,2,0)
+        state.camera.position.set(1,1.3,0)
         state.camera.rotation.set(0, Math.cos((offset * Math.PI) ) * 3, 0)
     })
 
@@ -36,7 +36,7 @@ export default function Experience()
 
         <directionalLight castShadow position={ [ 1, 2, 3 ] } intensity={ 1.5 } shadow-normalBias={0.04} />
         <ambientLight intensity={ 0.5 } />
-        <ScrollControls damping={0.1} pages={5.3}>
+        <ScrollControls damping={0.1} pages={7}>
             <ScrHtml />
             <Scroll>
                 <City/>
