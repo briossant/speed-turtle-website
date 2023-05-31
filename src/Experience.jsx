@@ -1,20 +1,11 @@
 import {
-    Clone, Gltf,
-    Instance,
-    OrbitControls,
     Scroll,
     ScrollControls,
-    useAnimations,
-    useFBX,
-    useGLTF,
     useScroll
 } from '@react-three/drei'
-import { Perf } from 'r3f-perf'
 import ScrHtml from "./ScrHtml";
-import {useEffect, useRef} from "react";
-import * as THREE from "three";
 import {useFrame} from "@react-three/fiber";
-
+import {Model} from "./Model";
 
 function City(){
     const scroll = useScroll()
@@ -31,7 +22,6 @@ function City(){
 export default function Experience()
 {
 
-
     return <>
 
         <directionalLight castShadow position={ [ 1, 2, 3 ] } intensity={ 1.5 } shadow-normalBias={0.04} />
@@ -42,6 +32,6 @@ export default function Experience()
                 <City/>
             </Scroll>
         </ScrollControls>
-        <Gltf src={"/Intro2.glb"}/>
+        <Model/>
     </>
 }
