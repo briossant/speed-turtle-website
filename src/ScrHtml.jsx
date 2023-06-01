@@ -126,9 +126,10 @@ export default function ScrHtml(){
             <div className="container">
                 <h1>Who are we?</h1>
                 <p className="boo">
-                    We are all freshmen at Epita with scientific studies during high school. We have the ambition to
-                    create a complete and original game, hoping everything will be made with our own hands. This
-                    will allow us to acquire the necessary technical knowledge. We are determined to carry out this
+                    We are all freshmen at Epita with scientific studies during high school.
+                    We have the ambition to create a complete and original game and will be
+                    trying to create as much as we can by ourselves allowing us to
+                    improve our technical knowledge. We are determined to carry out this
                     project which is close to our hearts. Our group is called "Flipped Turtles".
                 </p>
                 <p className="boo">
