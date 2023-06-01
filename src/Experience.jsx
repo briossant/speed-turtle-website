@@ -43,7 +43,7 @@ export default function Experience()
         />
         <directionalLight castShadow position={ [ 1, 2, 3 ] } intensity={ 1 } shadow-normalBias={0.04} />
         <ambientLight intensity={ 0.7 } />
-        <ScrollControls damping={0.1} pages={6}>
+        <ScrollControls damping={0.2} pages={6}>
             <ScrHtml />
             <Scroll>
                 <City/>

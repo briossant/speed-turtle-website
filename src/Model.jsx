@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Model(props) {
-    const { nodes, materials } = useGLTF("/Intro2.glb");
+    const { nodes, materials } = useGLTF("./Intro2.glb");
     return (
         <group {...props} dispose={null}>
             <group
