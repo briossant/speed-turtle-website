@@ -7,7 +7,8 @@ import {
 import ScrHtml from "./ScrHtml";
 import {useFrame} from "@react-three/fiber";
 import {Model} from "./Model";
-import {useEffect} from "react";
+import {useEffect, Suspense} from "react";
+import Placeholder from "./Placeholder";
 
 function City(){
     const scroll = useScroll()
@@ -49,7 +50,12 @@ export default function Experience()
                 <City/>
             </Scroll>
         </ScrollControls>
-        <Model/>
-        <Clone castShadow object={model} scale={0.003} position={[2.6,0.5,1.8]} rotation-y={Math.PI*1.2} />
+        <Suspense fallback={<Placeholder/>}>
+            <Model/>
+        </Suspense>
+        <Suspense fallback={<Placeholder/>}>
+            <Clone castShadow object={model} scale={0.003} position={[2.6,0.5,1.8]} rotation-y={Math.PI*1.2} />
+        </Suspense>
+
     </>
 }
