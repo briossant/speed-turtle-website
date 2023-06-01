@@ -2,23 +2,27 @@ import {Scroll} from "@react-three/drei";
 
 export default function ScrHtml(){
     return <Scroll html style={{ width: '100%' }}>
+
         <section id="home">
             <div className="container-fluid text-center">
                 <main className="px-3">
-                    <h1>Piquette</h1>
+                    <div className="container" style={{maxWidth: '600px'}}>
+                    <img src="./piquette.png" className="d-block w-100" alt="..."/>
+                    </div>
                     <p className="lead">
                         A new adventure video game by the French team Flipped Turtles
                     </p>
                     <p>
-                        Scroll for more
+                        Scroll down for more
                     </p>
                 </main>
             </div>
         </section>
 
         <div className="p-4" id="sec1">
-            <br /><br /><br />
+            <br /><br />
             <div className="container">
+                <hr/><br />
                 <h1>What is Piquette?</h1>
                 <p className="boo">
                     "Piquette" is an adventure video game. In one of your most profound dreams, you find yourself in
@@ -110,13 +114,15 @@ export default function ScrHtml(){
                                 <span className="visually-hidden">Next</span>
                             </button>
                         </div>
+                <br /><br />
+                <hr/>
             </div>
-            <br /><br /><br />
+
         </div>
 
 
         <div id="sec2">
-            <br /><br /><br />
+            <br />
             <div className="container">
                 <h1>Who are we?</h1>
                 <p className="boo">
@@ -172,8 +178,12 @@ export default function ScrHtml(){
                         <span className="visually-hidden">Next</span>
                     </button>
                 </div>
+                <br /><br /><br />
+
+                <hr/>
             </div>
-            <br /><br /><br />
+            <br /><br />
+
         </div>
         <div className="container">
             <h1>Download</h1>
@@ -193,7 +203,7 @@ export default function ScrHtml(){
 
         <br /><br /><br />
 
-        <div style={{backgroundColor: "#2f4858", color: "#b2b2b2", textShadow: "none", height: "1000px"}} id="contact">
+        <div style={{backgroundColor: "#2f4858", color: "#b2b2b2", textShadow: "none", height: "10000px"}} id="contact">
             <br/><br/>
                 <div className="container d-flex flex-row">
                     <h3 className="p-3">CONTACT:</h3>
@@ -214,7 +224,10 @@ export default function ScrHtml(){
                         <div>piquette.flippedturtle@gmail.com</div>
                     </div>
                 </div>
-                <br/><br/>
+            <div className="container">
+                <br/><hr/><br/>
+
+            </div>
             <div className="container d-flex flex-row">
                 <h3 className="p-3">CREDIT:</h3>
                 <div className="p-3">
